@@ -1,6 +1,6 @@
-==============================================
-*CURSO BÁSICO DE VIM - UNIVERSIDAD DE SEVILLA*
-==============================================
+
+Curso básico de VIM - Universidad de Sevilla
+============================================
 
 Paragraphs are separated by a blank line.
 

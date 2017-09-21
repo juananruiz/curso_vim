@@ -1,6 +1,6 @@
 
-  CURSO BÁSICO DE VIM - UNIVERSIDAD DE SEVILLA
-  ============================================
+Curso básico de VIM - Universidad de Sevilla
+============================================
 
   * Esto intenta ser una presentación de VIM echa con VIM
 
