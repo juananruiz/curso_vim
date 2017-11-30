@@ -1,0 +1,34 @@
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Haz que la línea de abajo de cada pareja sea igual que la de arriba utilizando la manera vim y el menor número de comandos posibles
+-----------------------------------------------------------------------------------------------------------------------------------
+
+* * * * * * * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * 
+Solución: 20i*<SPACE><ESC>
+
+
+A un panal de rica miel diez mil moscas acudieron que por golosas murieron presas de patas en él
+A un panal de de rica miel diez mil moscas acudieron que por golosas mueriron presa de patas wn él
+Solución: 
+
+
+Convenio de la Universidad de Sevilla para la Realización de Prácticas en Empresas Extranjeras
+convenio de la universidad de sevilla para la realización de prácticas en empresas extranjeras
+Solución: 
+
+
+esto_es_un_nombre_de_fichero_largo_pero_correcto.txt
+esto es un nombre de fichero largo pero correcto.txt
+Solución: 
+
+
+1 2 3 4 5
+1 1 2 2 3 3 4 4 5 5
+Solución: 
+
+
+uno uno dos dos tres tres cuatro cuatro cinco cinco 
+uno dos tres cuatro cinco 
+Solución: 
+

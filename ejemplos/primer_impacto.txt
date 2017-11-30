@@ -1,0 +1,20 @@
+Mis primeros comandos en VIM
+----------------------------
+
+h --> Mover el cursor a la izquierda.
+j --> Mover el cursor hacia abajo.
+k --> Mover el cursor hacia arriba.
+l --> Mover el cursor hacia la derecha.
+i --> Insertar texto en la posición actual del cursor (Insert), pasando a Modo Inserción. Se permanece en modo inserción hasta que se sale explícitamente de él.
+ESC	 --> Salir del modo inserción y volver a modo comando. En modo comando, permite cancelar muchos de los comandos que se están ejecutando.
+x --> Borrar el caracter bajo el cursor (equivale a la tecla Del/Supr).
+X --> Borrar el caracter a la izquierda del cursor (equivale a la tecla Borrar/Backspace).
+J --> Juntar la línea actual con la siguiente (Join), eliminando el retorno de carro entre ellas.
+u --> Deshacer la última acción (Undo). Si lo pulsamos más veces desharemos acciones anteriores.
+CTRL+R	--> Rehacer la última acción (Redo). Si lo pulsamos más veces reharemos acciones posteriores deshechas.
+a --> Insertar texto en la siguiente posición tras el cursor (Append). Es similar a i, salvo que el texto no se inserta en la posición actual del cursor sino a su derecha.
+A --> Poner el cursor al final de la línea y pasar a modo inserción (añadir texto al final).
+o --> Crear una línea vacía, en blanco, bajo la línea actual, y pasar a modo inserción con el cursor posicionado en dicha línea. Es mucho más cómodo que (como en otros editores) tener que pulsar FIN y ENTER para crear una línea en blanco.
+O --> Crear una línea vacía, en blanco, sobre la línea actual. Sería el equivalente en otros editores a ARRIBA, ARRIBA, FIN, ENTER.
+dd -->	Borrar la línea actual (sobre la que está el cursor).
+D --> Borrar desde la posición actual del cursor hasta el final de la línea.

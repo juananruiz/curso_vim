@@ -1,0 +1,55 @@
+Tratamiento de texto con tratamiento
+------------------------------------
+
+Quiero que cambies el tratamiento en la frase que aparece en la línea 24 de manera 
+que el resultado quede en tercera persona.
+
+Para ello te animo a usar fundamentalmente los siguientes verbos (r x c) y los 
+movimientos (0 e w j f), además de números para evitar repeticiones.
+
+Por ejemplo, tras cambiar "T" por "L" en la primera palabra puedes hacer 4e para 
+ir al final de la palabra "rellenes".
+
+Además, como ya eres un usuario pro te voy a pedir que cuando estés al principio 
+de la frase empieces a grabar una macro "qa" para registrar los movimientos y acciones 
+que vas haciendo, esta macro no tendrá otra utilidad que grabar tus movimientos 
+para que me los pases como parte de la solución al ejercicio. Cuando termines de 
+tratar la frase finaliza la macro con "q" inserta una nueva línea y teclea "ap
+para pegar el contenido de la macro (la comilla delante de ap también hay que teclearla)
+
+Repite el ejercicio tres veces e intenta ir reduciendo el número de pulsaciones (vimgolf).
+Puedes utilizar el volcado de la macro para intentar mejorar tus "golpes".
+
+-----------------------------------------------------------------------------------------
+
+Te pedimos que rellenes el cuestionario para saber tu opinión sobre el curso que acabas de hacer
+Gracias a tus comentarios podremos mejorar nuestros cursos y darte el servicio que mereces
+
+
+
+Te pedimos que rellenes el cuestionario para saber tu opinión sobre el curso que acabas de hacer
+Gracias a tus comentarios podremos mejorar nuestros cursos y darte el servicio que mereces
+
+
+
+Te pedimos que rellenes el cuestionario para saber tu opinión sobre el curso que acabas de hacer
+Gracias a tus comentarios podremos mejorar nuestros cursos y darte el servicio que mereces
+
+
+
+-----------------------------------------------------------------------------------------
+Ejemplo de solución
+-------------------
+Le pedimos que rellene el cuestionario para saber su opinión sobre el curso que acaba de hacer
+Gracias a sus comentarios podremos mejorar nuestros cursos y darle el servicio que merece
+0rLeeeex4wwrs4e2eexj02wrsfyftcwlew4ex
+
+
+Le pedimos que rellene el cuestionario para saber su opinión sobre el curso que acaba de hacer
+Gracias a sus comentarios podremos mejorar nuestros cursos y darle el servicio que merece
+0rL4ex5wrs6eexj02wrsfyftcwlew4ex
+
+
+Le pedimos que rellene el cuestionario para saber su opinión sobre el curso que acaba de hacer
+Gracias a sus comentarios podremos mejorar nuestros cursos y darle el servicio que merece
+0rL4ex5wrs7exj02wrsfyftcwle5ex

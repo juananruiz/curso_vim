@@ -1,0 +1,263 @@
+Vim en 2 minutos
+----------------
+
+Juanjo Álvarez .net 
+Julio 22 2004
+
+Modos de trabajo
+----------------
+
+Vim tiene dos modos de trabajos: El Modo de Edición y el Modo Comando. Cuando inicias el programa te encuentras en Modo Comando, para acceder al Modo de Edición y empezar a trabajar con el texto debes introducir algún comando de inserción (cómo "a" o "i").
+
+Para volver de nuevo al modo comando debes pulsar la tecla ESCAPE. Si esto te parece farragoso no te preocupes: cuando te hagas a ello lo encontrarás tremendamente rápido y natural (los autores ahora mismo encuentran liosos los editores no modales, pero hemos llegado a un estado de vim-degeneración tremendo).
+
+1. Comandos Ultra Habituales
+----------------------------
+
+Vim dispone de muchísimos comandos y macros. En esta sección pondremos los mínimos imprescindibles para poder editar con soltura. Aunque no seas usuario de Vim o no te guste, es útil conocer este conjunto mínimo de comandos porque Vi está disponible en cualquier máquina Unix (lo especifica el estándar POSIX).
+
+Añadir e insertar: a / i
+Entra en modo edición en la posición anterior / actual del cursor.
+
+Añadir debajo: o
+Inserta una nueva linea en blanco debajo de la actúal y entra en modo edición en esa nueva línea
+
+Deshacer y rehacer: u / Control-R
+Deshacer / Rehacer la última acción (tiene varios niveles)
+
+Volver al estado de hace X minutos, segundos o horas: :earlier 10s/:earlier 10m/:earlier 10h
+Vuelve al estado en el que estaba el fichero en el tiempo especificado. Por ejemplo si ponemos :earlier 10m volverá al estado de hacer diez minutos (además de "m" podemos poner "s" para los segundos y "h" para las horas.)
+
+Suprimir carácter y línea: x / dd
+Suprime el carácter/línea bajo el cursor. Si escribimos un número antes del comando (por ejemplo "12dd") se borrarán el número especificado de carácteres o líneas
+
+Guardar: :w / :wa
+Guardar / Guardar todas las pestañas. Si ponemos una exclamación al final (":w!") forzamos a guardar sin confirmación
+
+Salir sin guardar: :q / :qa
+Salir / salir de todas las pestañas. Si ponemos una exclamación al final (":q!") forzamos a salir sin confirmación
+
+Guardar y salir: :x / :xa
+Guardar y salir. Si ponemos una exclamación al final (":x!") forzamos a salir sin confirmación
+
+Ir a linea: ngg
+Va a la línea n, por ejemplo, si escribimos "10gg" irá a la linea 10. Si no esribimos número de linea (sólo "gg"), va al principio del fichero.
+
+Ir al final del fichero: G
+Va al final del fichero
+
+Buscar: /termino_busqueda
+Busca el término especificado tras la barra en el texto
+
+Buscar hacia atrás: ?cadena< /dt>
+Busca el término especificado tras el ? hacia atrás en el texto.
+
+Siguiente /anterior resultado: n / N
+Siguiente / anterior resultado de la búsqueda
+
+Preparar pegado externo: set paste / :set nopaste
+:set paste pone el vim en modo "pegar". En este modo se desactiva cualquier formateado automático de modo que podamos pegar lineas con el ratón sin que nos las descoloque. :set nopaste se utiliza para volver al modo normal con formateado automático. Esto es muy útil para pegar con el ratón desde programas externos al Vim (en la sección "Copiar, pegar, insertar" veremos otra forma de pegar para texto interno a Vim.)
+
+Sustituir texto: :%s/cadena 1/cadena 2/g
+Sustituye todo el fichero cada ocurrencia de cadena 1 por cadena 2
+
+Repetir última modificación: .
+Repite la última modificación que hayamos realizado.
+Moverse a próximo carácter: f-carácter
+Se mueve al carácter indicado. Por ejemplo si pulsamos "f-i" estándo al principio de esta linea se moverá a la palabra "indicado." Podemos avanzar hasta el siguiente carácter pulsando punto y coma (;). Este comando es muy útil para moverse rápidamente a un punto determinado dentro de un párrafo.
+
+2. Pestañas, subdivisiones y sesiones
+
+Vim nos permite editar varios ficheros o varias partes de un mismo fichero simultaneamente. Para ello nos proporciona pestañas (similares a las pestañas de los navegadores) y subdivisiones ("splits"). Además nos permite guardar las sesiones de edición, incluyendo opciones usadas, pestañas, archivos cargados en las pestañas, y subdivisiones creadas dentro de cada pestaña, para poder recuperarlas en cualquier momento. En mi caso suelo trabajar abriendo cada uno de los ficheros sobre los que estoy trabajando en una pestaña, y creo subdivisiones cuando quiero ver varias partes de un fichero al mismo tiempo.
+
+Cargar archivo: :e nombre_del_archivo
+Abre el archivo especificado en la pestaña actúal. Si no queremos escribirlo podemos poner ":e ." y se nos abrirá un navegador de ficheros en modo texto muy intuitivo (se usa con los cursores e intro para abrir fichero o entrar en directorios) desde el cual podremos seleccionar el fichero
+
+Abrir nueva pestaña: tabe
+Crea una nueva pestaña vacía. Normalmente cargaremos algo en la pestaña usando el comando ":e" (ver punto anterior). La pestaña se puede cerrar con :tabc ("tab close") o con los :w, :q y :x habituales (si no añadimos "a" al final de estos comandos, operarán sólo sobre la pestaña actual; si lo añadimos (":wa!") operarán sobre todas las pestañas abiertas.
+
+Ir a siguiente / anterior pestaña: gt / gT
+Cambiar a pestaña siguiente / pestaña anterior. También podemos ir directamente a la primera o la última con :tabfirst y :tablast
+
+Crear subdivisión horizontal o vertical :split / :vsplit
+Crea, dentro de la pestaña actúal, una subdivisión independiente horizontal (":split") o vertical (":vsplit", más útil para monitores panorámicos.) Podemos movernos entre las subdivisiones usando Control-W-W o Control-W y una tecla del cursor hacia donde esté la subdivisión. Podemos clear subdivisiones dentro de las propias subdivisiones. Las subdivisiones puede cerrarse usando ":q" (cerrará sólo esa división, no la pestaña ni el Vim.) Estos comandos pueden abreviarse como :sp / :vsp.
+
+Guardar o cargar la sesión actual: :mksession nombre_fichero_sesion / :source nombre_fichero_sesion
+":mksession" guarda la información de la sesión actual (pestañas, subdivisiones, ficheros abiertos y otras opciones) en el fichero con el nombre especificado (yo suelo usar "visesion"). Este fichero sería el equivalente a los ficheros de proyecto de Visual Studio y otros IDEs. Para recuperar una sesión podemos ejecutar el Vim como "vim -S fichero_sesion" o si ya estamos dentro de una pestaña de Vim con ":source fichero_sesion". mksession puede abreviarse como :mks y :source puede abreviarse como :so
+
+Convertir los buffers en pestañas: :tab sba
+Esto es extremadamente útil pues nos permite convertir todos los buffers (ficheros abiertos pero no en pestañas) en pestañas. De esta forma podremos indicar a vi desde la línea de comandos una serie de ficheros (por ejemplo "vim *.py") y con este comando haremos que todos esos ficheros se conviertan en pestañas. Otra opción es pasarle a Vim el argumento "-p" que hará que los abra directamente en pestañas (pero es fácil olvidarse... aunque en mi sistema yo tengo un alias que hace que vim apunte a "vim -p")
+Mover pestaña a posición: :tabm posición
+Con esto movemos una pestaña a la posición que le indiquemos como un índice que empieza por 0 (:tabm 0 movería la pestaña actúal a la primera posición.)
+Ejecutar comando de vi en todas pestañas: :tabdo comando
+En ocasiones podemos querer que un comando, por ejemplo una substitución con :%s se ejecute no sólo en la pestaña actual sino también en todas las pestañas.
+
+3. Programación
+
+Vim es un editor usado principalmente, además de por administradores de sistemas, por programadores. Es normal, por lo tanto, que tenga muchos comandos extremadamente útiles para programar. Algunos de ellos son:
+
+Compilar o comprobar errores: :make
+Este comando es mucho más útil que el anterior: Ejecuta make desde el directorio desde el que lanzamos Vim, pero si hay algún error salta directamente a el. Podemos configurar el comando que se ejecute al hacer ":make" para que por ejemplo ejecute el pychecker o el pylint
+
+Ir a la definición: gd
+Salta a la declaración, o primera aparición en este archivo, del símbolo sobre el que se encuentra el cursor.
+
+Siguiente / anterior bloque de sentencias: } / {
+Salta al siguiente / previo conjunto de sentencias.
+
+Siguiente / anterior instrucción: w y b
+Salta a la siguiente o anterior 'palabra' pero con un concepto de 'palabra' dependiente de cada lenguaje.
+
+Sustitución cadenas: c-i-' / c-i-"
+Elimina el texto de la cadena, dentro del tipo indicado (comilla simple o doble) y pone el cursor en inserción al principio.
+
+Selección texto cadenas: v-i-' / v-i-"
+Selecciona (en modo visual) todo el texto bajo la siguiente cadena de la línea actúal.
+
+Sumar / Restar al número bajo el cursor: Control-a / Control-x
+Suma o resta uno al número que esté bajo el cursor. Más útil de lo que parece...
+
+Resaltar llaves o paréntesis: %
+Se resaltarán las llaves o paréntesis (o ambos) que se correspondan con el bloque de código actual. Útil cuando hay mucho lío de llaves o paréntesis.
+Buscar un texto en ficheros: :grep "texto indicado" *
+Busca el texto que le pongamos como argumento entre los archivos del directorio actual o, si le pasamos a grep el argumento -r, entre todos los archivos del directorio actual y subdirectorios.
+
+4. Movimiento dentro de una pestaña
+
+Vim ofrece varias formas de movernos rápidamente dentro de el fichero editado dentro de una pestaña. Además de los comandos para saltar a principio (gg), final (G) o una línea concreta (número-gg) y los comandos de búsqueda y salto entre resultados (/, n y N) que vimos en la sección de "Comando Ultra Habituales", es interesante también conocer estos otros:
+
+Primer carácter siguiente línea: intro
+Va al primer carácter que no sea un espacio o un tabulador de la siguiente línea.
+
+Primer carácter anterior línea: -
+Va al primer carácter que no sea un espacio en blaco o un tabulador de la línea anterior.
+
+Ir a última posición modificada: ',
+Mueve el cursor a la posición donde hayamos realizado la última modificación, sin salir del modo comando.
+Insertar en posición última modificación: g-i
+Mueve el cursor al sitio donde hiciéramos la última modificación y se pasa a modo inserción. Ésto es muy útil para volver a la posición donde estábamos trabajando después de habernos ido "a mirar algo" en otra posición del fichero.
+
+Poner / ir a marcador: m[letra] y '[letra]
+Establece una marca, a la que podremos saltar posteriormente. Si 'letra' es minúscula, sólo podremos volver a la marca desde el mismo archivo en que se situó, si es una letra mayúsculas podremos volver incluso desde otros archivos.
+
+Ir a inicio/final del párrafo: { / }
+Mueve el cursor al inicio o al final del párrafo. Mas rápido que usar las teclas de dirección,.
+Ir a inicio/final de frase: ( / )
+Mueve el cursor al inicio o al final de la frase. Más rápido que usar las teclas de dirección, de nuevo.
+Mostrar lineas que contienen palabra: ]I
+Muestra todos las líneas donde está la palabra debajo del cursor
+
+5. Modo Visual (copiar, cortar, pegar)
+
+El modo visual de Vim permite realizar selecciones de texto. Una vez echas éstas, podremos copiar, cortar y pegar (también podemos copiar y pegar desde programas externos usando el portapapeles normal del sistema operativo, aunque en ese caso se recomienda activar el modo "paste".)
+
+Activar modo Visual: v
+Entra en modo Visual. En este modo seleccionaremos un texto con los cursores, y después podremos cortar, copiar y pegar con los comandos:
+
+Copiar: y
+Copiar el texto seleccionado en modo visual (de "yank".)
+
+Cortar: c
+Cortar el texto seleccionado en modo visual
+
+Pegar: p
+Pegar el texto copiado o cortar en modo visual con anterioridad.
+
+Seleccionar párrafo: v-i-p
+Selecciona todo el párrafo bajo el cursor.
+
+Ir al otro lado de la selección: o
+Mueve el cursor al otro extremo de la selección. Útil para ampliar la selección por ese lado.
+
+Pasar selección a mayúscula / minúscula: gU / gu
+Pasa toda la selección a mayúscula o minúscula.
+6. Autocompletado
+
+El Vim proporciona muchos modos de autocompletado. La mayoría se activar pulsando Control-X y luego un carácter que activa un modo u otro. Sin duda el modo más avanzado es el "Omni" (Vim 7.0 o superior) que completa, si estamos programando, de forma inteligente los métodos de clase, funciones o miembros de un módulo. Cuando hay varias alternativas estos modos de completado muestran una lista desplegable con todas las opciones, que podremos seleccionar con los cursores e intro. Los modos de autocompletado funcionan en modo de inserción, no en modo comando.
+
+Completar palabra en fichero: Control-p
+Completa la palabra que estamos escribiendo con otras palabras existentes en cualquiera de los ficheros que estamos editando en la sesión (en todas las pestañas.) En la sección sobre el fichero de configuración, más adelante, se muestra como remapear el tabulador para que realice esta función.
+
+Completar nombre de fichero: Control-x-f
+Completa el nombre de fichero que estamos escribiendo con nombres de fichero o directorios existentes en el sistema de archivos.
+
+Completado inteligente "Omni": Control-x o
+Completa de forma inteligente los nombres de métodos de clase, clases y módulos. En algunos casos incluso muestra la documentación en una subdivisión superior.
+
+Anular sugerencias de completado: Control-e
+Anula cualquier sugerencia de completado y elimina la lista desplegable. No funciona si ya hemos seleccionado uno de los términos.
+
+7. Otros comandos interesantes
+
+Ejecución de comando externo: :!comando
+Ejecuta un comando externo del sistema; por ejemplo si queremos ver la lista de ficheros en el directorio actual podemos hacer ":!ls". Además, si tenemos un texto seleccionado en modo visual, el comando (si lo permite) se aplicará sobre ese texto; por ejemplo en Unix podemos ordenar una lista de líneas seleccionándolas en modo visual y haciendo ":!sort".
+
+Suspender temporalmente Vim y volver a la shell: Control-z
+Suspende el Vim y vuelve a la shell, desde donde podremos ejecutar comandos del sistema. Podemos volver a Vim en cualquier momento si, bajo Unix o Cygwin, ejecutamos "fg".
+
+Insertar un archivo en el cursor: :r nombre_fichero
+Inserta el fichero especificado a partir de la posición actual del cursor.
+
+Buscar siguiente / anterior bajo el cursor: * / #
+Busca la palabra bajo el cursor (atajo a escribir /palabra y n)
+
+Búsqueda sin importar/importando mayusculas/minúsculas: /\c o /\C
+Independiéntemente de como tengamos configurado Vim, podemos forzar que una búsqueda sea independente de mayúsculas minúsculas usando /\c y luego los términos de la búsqueda. También podemos forzar que la búsqueda considere la diferencia con /\C.
+
+Borrado de frase: d-a-s
+Borra toda la frase, desde el punto anterior al siguiente punto, dentro del mismo párrafo.
+
+Unir con linea siguiente: Shift-j
+Une la linea con la siguiente.
+Imprimir: :ha!
+Imprime el documento en la impresora por defecto; fácil de recordar.
+El fichero de configuración de Vim: $HOME/.vimrc
+
+En el archivo de configuración ($HOME/.vimrc) se pueden configurar infinidad de opciones; yo utilizo las siguientes:
+
+set sw=3
+Por defecto Vim produce unas tabulaciones de 8 caracteres. Esto, si estás programando, puede producir que en cuando tengas unos pocos bloques anidados se te acaben las líneas enseguida. Por eso, con esta opción establezco las tabulaciones a tres blancos.
+
+set ai
+Autoindent: Cada vez que pulsamos intro para acceder a una nueva línea, Vim indentará esa línea del mismo modo que la línea anterior. Si estamos bajo Linux, y usando el controlador para ratón en consola GPM, esto puede tener el indeable efecto de que al pegar texto con el ratón se nos descoloquen todas las líneas (porque va tomando la indentación de la anterior y se van acumulando). La forma de evitar esto es hacer justo antes de pegar ':set noai' pera desactivar la autoindentación, y ':set ai' para activarla después. El Auténtico Hombre Vago (TM) se debería hacer una macro para esto, aunque al Realmente Auténtico Hombre Vago (TM), como yo, le da pereza hacerla...
+
+set cindent
+Realiza una indentación inteligente según lo que estemos introduciendo (por ejmplo pondrá una tabulación tras una llave "{" si estamos con un programa en C, o la reducirá cuando encuentre una llave de cierre). Para más información sobre esta opción es recomendable ver la ayuda
+
+set sm
+Cada vez que cerremos un paréntesis, llave o corchete nos mostrará la apertura equivalente. Esto es treméndamente útil a la hora de programar ya que en muchas ocasiones nos evita errores, o ayuda a identificarlos, sobre todo a los degenerados que programan en Lisp.
+
+set ruler
+Nos indicará en todo momento, en la parte inferior de la pantalla, la línea y columna en la que estamos.
+
+set nocompatible
+Pone los valores por defecto del Vim, en lugar de los de Vi. Pone varias opciones de configuración interesantes, pero puede confundir a los que estén acostumbrados a manejar en Vi. Sin embargo, recomendamos enérgicamente activar esta opción.
+
+Crear comandos
+
+En el fichero .vimrc podemos además crear nuestros propios comandos mediante el comando map. Vamos a crear por ejemplo un comando para comentar lineas de shell scripts. Si lo hiciéramos "a pelo" tendríamos que pulsar i para ponernos en modo INSERT y, entonces, ir linea por línea colocándonos al principio e insertando un carácter #. Vamos a ver cómo sería el comando:
+
+    map ^[c ^[^I#^[j
+Vamos por partes:
+map: Comando para asignar a una combinación de teclas unas acciones determinadas.
+^[c: Con esto lo que queremos decir es: "cuando pulses ALT+c .....". Para ponerlo nos ponemos en modo "INSERT" y pulsamos CTL+v seguido de ALT+c. Esto se aplica a cualquier comando que queramos crear.
+^[: Esta secuencia tiene el mismo efecto que si pulsáramos dentro del editor la tecla ESC (pasar a modo comando) y, por lo tanto, lo conseguimos mediante la secuencia dentro del editor: CTL+v seguido de ESC.
+^: Mediante esta secuencia lo que conseguimos es ponernos al principio de la línea. Esto es análogo al uso que en grep se le da a ^
+I#: Una vez que estamos al principio de la línea lo que queremos es insertar un "#". Por lo tanto nos ponemos en modo insertar y le decimos que ponga "#".
+^[j: Nos ponemos en modo comando para mover el cursor una línea hacia abajo mediante el comando "j". Para ponernos en modo comando, puesto que es igual que si pulsáramos la tecla ESC dentro del editor, utilizamos la secuencia CTL+v seguido de ESC. Poniendo j después conseguimos que el cursor avance una línea.
+
+Y ya tenemos terminado nuestro comando. Grabamos el .vimrc, y cuando entremos al vim y pulsemos ALT+c se comentará la línea en la que estemos trabajando. El comando para comentar una línea de un fuente de C sería muy parecido:
+
+    map ^[v ^[^I//^[j
+Con este comando al pulsar ALT+v se insertará "//" al principio de la línea y bajará a la siguiente.
+
+Crear alias para "palabras" habituales
+
+Otro "truquillo" que podemos utilizar en el .vimrc es el de crear alias para palabras habituales que normalmente utilicemos en nuestros documentos. Si, por ejemplo, sueles poner tu dirección de correo y tu nombre en tus documentos, estaría bien poder disminuir el número de teclas a pulsar para no tener que estar repitiendo siempre lo mismo.
+Para crear alias utilizamos el comando ab. Vamos a hacer un alias para la dirección de correo electrónico:
+
+    ab dcr ferkys@pagina.de
+Incluyendo esto en el fichero .vimrc la próxima vez que, estando trabajando con vim, pongamos la secuencia dcr (como una palabra a parte, si forma parte de una palabra no se sustituye) la transformará en ferkys@pagina.de
+
+ 
+JuanjoAlvarez.net es © 2004-2017 Juanjo Alvarez | Todos los derechos reservados salvo que se indique lo contrario

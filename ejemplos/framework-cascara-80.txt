@@ -1,0 +1,20 @@
+Cáscara cabalga de nuevo 
+------------------------
+
+Crear aplicaciones web no tiene porqué ser complicado. Aunque hay muchas maneras
+de hacer las cosas y cada uno puede trabajar en el entorno y en el lenguaje en
+el que se encuentre más comodo. Pero de vez en cuando es bueno probar otros
+entornos, bien para incorporar buenas prácticas que encontremos en ellos, porque
+un cambio de enfoque siempre puede darnos buenas ideas, o porque para ciertos
+proyectos sea más adecuada la tecnología que estamos conociendo.
+
+Por eso quiero presentaros el conjunto de herramientas que utilizamos desde hace
+más de diez años.
+
+Es normal que a cada uno su solución le parezca la más sencilla, porque al fin
+y al cabo es la que conoce y se encuentra habituado a ella, pero yo puedo decir
+que he compartido este conjunto de herramientas y esta manera de hacer la cosas
+con varios compañeros y todos ellos la han encontrado asequible y han empezado a
+ser productivos en ella en el lapso de unos días. Incluso personas con escasos
+conocimientos de programación han podido hacer cambios sencillos porque me
+decían que podían entender en parte la lógica del código y de las plantillas.
