@@ -11,7 +11,7 @@ Todo esto lo hace ideal para editar ficheros de configuración de cualquier tipo
 existentes, modificar textos de manera automatizada, etc.
 
 ## Temario
-1. [Preparándote para el viaje]()
+1. [Preparándote para el viaje](temario/preparandote_para_el_viaje.md)
 2. [Sobrevivir al primer impacto]()
 3. [Comenzar a respirar]()
 4. [Vuela como si no te afectara la gravedad]()
