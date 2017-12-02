@@ -11,9 +11,14 @@ Todo esto lo hace ideal para editar ficheros de configuración de cualquier tipo
 existentes, modificar textos de manera automatizada, etc.
 
 ## Temario
-1. Sobrevivir al primer impacto
-2. Comenzar a respirar
-3. Vuela como si no te afectara la gravedad
-4. Mueve el texto con la mente
-5. Vista de rayos X para hacer búsquedas y sustituciones
-6. Corre más rápido con las macros
+1. [Preparándote para el viaje]()
+2. [Sobrevivir al primer impacto]()
+3. [Comenzar a respirar]()
+4. [Vuela como si no te afectara la gravedad]()
+5. [Muevete a la velocidad de la luz]()
+6. [Vista de rayos X para búsquedas y sustituciones]()
+7. [Las macros aumentan tus poderes]()
+8. [Buffer, ventanas y pestañas]()
+9. [Personalizando Vim: el fichero .vimrc]()
+10. [Hasta el infinito y más allá con los plugins de Vim]()
+11. [Recetas galácticas]()
