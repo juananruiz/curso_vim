@@ -1,8 +1,10 @@
 
------------------------------------------------------------------------------------------------------------------------------------
-Haz que la línea de abajo de cada pareja sea igual que la de arriba utilizando la manera vim y el menor número de comandos posibles
------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Haz que la línea de abajo de cada pareja sea igual que la de arriba utilizando la manera vim 
+y el menor número de comandos posibles
+---------------------------------------------------------------------------------------------
 
+Ejemplo:
 * * * * * * * * * * * * * * * * * * * * 
 * * * * * * * * * * * * * * * * * * * * 
 Solución: 20i*<SPACE><ESC>
