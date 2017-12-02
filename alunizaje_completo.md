@@ -36,11 +36,9 @@ Ve a la última línea del fichero usando la tecla `j`, cuando llegues a la lín
 
 Cuando termines pulsa la tecla Escape (`ESC`) y estarás de vuelta al modo normal (normal para Vim, puede que todavía sea un poco raro para ti). Prueba ahora a borrar algunos caracteres usando la tecla `x` observa que puedes borrar pero no puedes escribir. Si quieres volver a escribir sitúate con  ayuda de las teclas  `h, j, k, l`  en donde quieras y entonces pulsa `i` . Observa que tras pulsarla puedes empezar a escribir delante de donde tenías el cursor (la i viene de insertar). 
 
-Cuando te canses de practicar pulsa `ESC`, y entonces teclea:
-`:q`
+Cuando te canses de practicar pulsa `ESC`, y entonces teclea: `:q`
 
- Este es el comando para salir de Vim sin guardar, si has hecho algún cambio se quejará de que no has guardado todo el trabajo que has hecho, como ahora no queremos guardar escribe entonces:
-`:q!`
+ Este es el comando para salir de Vim sin guardar, si has hecho algún cambio se quejará de que no has guardado todo el trabajo que has hecho, como ahora no queremos guardar escribe entonces: `:q!`
 
 Para recordar el signo de admiración recuerda que puedes sustituirlo mentalmente por cualquier imprecación que necesites soltar. Yo suelo pensar:
 "¡Salte ya, repámpanos!"
@@ -49,15 +47,17 @@ Si quieres guardar el fruto de tu esfuerzo teclea `:wq` para guardar y salir.
 
 Estas tres últimas ordenes que has utilizado son un tipo especial de ordenes a las que llamamos **modo comando**, se distinguen por los dos puntos y porque aparecen siempre en la línea inferior de la ventana.
 
-
-
 ## Tu chuleta de Vim
 
 A lo largo del curso te iré dando algunas chuletas que te podrán ser de utilidad, y que quedarán muy chulas en tu escritorio, pero es muy importante confeccionar una propia. 
 
 Coge papel y boli y en un rinconcito apunta estos primeros comandos que has aprendido y para que sirven cada uno de ellos, puedes ver en la ilustración una idea de como podría ser esta chuleta, pero no tiene porqué ser exactamente así. Al final del curso tendrás la hoja entera rellena 
 
-![chuleta_manuscrita_fase1](/Users/juananruiz/repos/curso-vim/chuleta_manuscrita_fase1.jpeg)
+![chuleta_manuscrita_fase1](/Users/juananruiz/repos/curso-vim/chuletas/chuleta_manuscrita_fase1.jpeg)
+
+
+
+
 
 
 
@@ -67,33 +67,31 @@ Todavía no hemos hablado de los modos, pero los menciono aquí para que te vaya
 
 #### Modo normal
 
-`h` mover cursor un carácter hacia la izquierda
+`h` → mover cursor un carácter hacia la izquierda
 
-`j` mover cursor una línea hacia abajo
+`j` → mover cursor una línea hacia abajo
 
-`k` mover cursor una línea hacia arriba
+`k` → mover cursor una línea hacia arriba
 
-`l` mover cursor un carácter hacia la derecha
+`l` → mover cursor un carácter hacia la derecha
 
 
 
-`i` comenzar a escribir antes del cursor, entra en modo inserción
+`i` → comenzar a escribir antes del cursor, entra en modo inserción
 
-`x` borrar el carácter bajo el cursor, no entra en modo inserción
+`x` → borrar el carácter bajo el cursor, no entra en modo inserción
 
-`ESC` volver a modo normal
+`ESC` → volver a modo normal
 
 
 
 #### Modo comando
 
-`:q` salir de vim 
+`:q` → salir de vim 
 
-`:q!` salir de vim forzado
+`:q!` → salir de vim forzado
 
-`:wq` salir de vim guardando antes
-
-
+`:wq` → salir de vim guardando antes
 
 
 
@@ -257,6 +255,8 @@ Ahora te propongo que hagas el ejercicio que aparece en el fichero "copiando_fun
 
 
 Bien, utiliza estos comandos hasta sentirte cómodo con ellos, una vez que lo hayas hecho te sentirás prácticamente de nuevo como en casa, tomate tu tiempo. Podrás hacer con Vim lo que hasta ahora hacías con un editor normal, recuerda, tienes que adaptarte a tus nuevos superpoderes y el primer paso es poder hacer de nuevo tus acciones cotidianas. Puede que todavía te sientas un poco incomodo, pero sigue conmigo a la siguiente etapa de este alunizaje.
+
+![chuleta_manuscrita_fase2](/Users/juananruiz/repos/curso-vim/chuletas/chuleta_manuscrita_fase2.jpeg)
 
 
 
