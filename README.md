@@ -22,3 +22,5 @@ existentes, modificar textos de manera automatizada, etc.
 9. [Personalizando Vim: el fichero .vimrc](temario/personalizando_vim_el_fichero_vimrc.md)
 10. [Hasta el infinito y más allá con los plugins de Vim](temario/hasta_el_infinito_y_mas_alla_con_los_plugins_de_vim.md)
 11. [Recetas galácticas](temario/recetas_galacticas.md)
+
+También tienes disponibles los [ejercicios](https://github.com/juananruiz/curso_vim/tree/master/ejercicios) del curso
