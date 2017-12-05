@@ -19,4 +19,4 @@ Ten también lápiz y papel preparados antes de empezar el curso, estás en terr
 
 ----
 
-[Volver al índice](https://github.com/juananruiz/curso_vim) - [Sobrevivir al primer impacto >>](temario/sobrevivir_al_primer_impacto.md)
+[Volver al índice](https://github.com/juananruiz/curso_vim) - [Sobrevivir al primer impacto >>](https://github.com/juananruiz/curso_vim/blob/master/temario/sobrevivir_al_primer_impacto.md)
