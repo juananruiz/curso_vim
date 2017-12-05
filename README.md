@@ -24,3 +24,6 @@ existentes, modificar textos de manera automatizada, etc.
 11. [Recetas galácticas](temario/recetas_galacticas.md)
 
 También tienes disponibles los [ejercicios](https://github.com/juananruiz/curso_vim/tree/master/ejercicios) del curso
+
+---
+[Preparándote para el viaje >>](temario/preparandote_para_el_viaje.md) 
