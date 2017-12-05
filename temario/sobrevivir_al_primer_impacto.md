@@ -69,4 +69,4 @@ Todavía no hemos hablado de los modos, pero los menciono aquí para que te vaya
 
 ----
 
-[<< Preparándote para el viaje](https://github.com/juananruiz/curso_vim/blob/master/temario/preparandote_para_el_viaje.md) - [Volver al índice](https://github.com/juananruiz/curso_vim) - [Comenzar a respirar](https://github.com/juananruiz/curso_vim/blob/master/temario/comenzar_a_respirar.md)
+[<< Preparándote para el viaje](https://github.com/juananruiz/curso_vim/blob/master/temario/preparandote_para_el_viaje.md) - [Volver al índice](https://github.com/juananruiz/curso_vim) - [Comenzar a respirar >>](https://github.com/juananruiz/curso_vim/blob/master/temario/comenzar_a_respirar.md)
