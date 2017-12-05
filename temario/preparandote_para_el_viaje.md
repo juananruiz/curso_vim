@@ -16,3 +16,7 @@ También existen versiones gráficas de vim para windows, mac o linux, puedes de
 Ten Vim siempre abierto durante el curso y pon en práctica todo lo que vayas leyendo, experimenta, investiga, intenta incluso ir por delante de lo que te cuento.
 
 Ten también lápiz y papel preparados antes de empezar el curso, estás en territorio desconocido y es bueno ir trazando un mapa. En la próxima etapa de este viaje te doy más detalles, pero de momento apunta todo lo que vayas aprendiendo.
+---
+
+[Preparándote para el viaje >>](temario/preparandote_para_el_viaje.md) 
+
