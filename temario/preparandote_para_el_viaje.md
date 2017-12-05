@@ -19,5 +19,4 @@ Ten también lápiz y papel preparados antes de empezar el curso, estás en terr
 
 ----
 
-[Preparándote para el viaje >>](temario/preparandote_para_el_viaje.md) 
-
+[Volver al índice](https://github.com/juananruiz/curso_vim) - [Sobrevivir al primer impacto >>](temario/sobrevivir_al_primer_impacto.md)
