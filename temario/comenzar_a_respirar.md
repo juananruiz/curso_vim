@@ -44,9 +44,12 @@ En la etapa anterior aprendiste a usar en modo inserción utilizando la `i` pero
 `A` → Insertar al final de la línea actual
 
 Como ves muchos comandos de Vim hacen cosas parecidas cuando están en minúsculas o mayúsculas:
+
 `a` / `A`
- `i` / `I`
- `o` / `O` etc...
+
+`i` / `I`
+
+`o` / `O` etc...
 
 Veamos algo más potente, estando en modo normal, colócate al principio de alguna palabra que te caiga mal y pulsa `cw`. Con esto has borrado una palabra y entras en modo inserción. Esto parece poca cosa pero ya verás las posibilidades que encierra.
 
@@ -55,21 +58,29 @@ Sigamos con algunos movimientos:
 #### Movimientos básicos
 
 `0` → (cero) ve a la primera columna
+
 `^` → ve al primer carácter 'visible' de la línea actual
+
 `$` → ve al final de la línea
+
 `g_` → ve al último carácter visible de la línea (nunca lo he usado)
+
 `CTRL-B` → una pantalla hacia arriba
+
 `CTRL-F` → una pantalla hacia abajo
+
 `/patito` → busca "patito"
 
 #### Copiar y pegar
 
 `P` → pegar delante, recuerda que `p` es pegar a continuación.
+
 `yy` → copia la línea actual, es un atajo de `ddP` (que a su vez es un atajo de `d$P`)
 
 #### Deshacer y rehacer
 
 `u` → deshacer
+
 `<C-r>` → rehacer
 
 Frente a otros editores de texto que deshacen los cambios carácter a carácter la `u` de Vim 'recuerda' las acciones de Vim de manera combinada por lo que el deshacer es mucho más natural y fiable, esto se eleva a la máxima potencia cuando te acostumbres a usar Vim 'a la manera de Vim'
@@ -77,10 +88,15 @@ Frente a otros editores de texto que deshacen los cambios carácter a carácter 
 #### Abrir/Grabar/Salir/Cambiar de fichero (buffer)
 
 `:e <ruta/archivo>` → abre archivo
+
 `:w` → graba el archivo actual
+
 `:saveas <nueva_ruta/nuevo_archivo>` → graba el archivo actual con otro nombre y/o ruta y ábrelo para editar
+
 `:x`, `ZZ` or `:wq` → save and quit (`:x` only save if necessary)
+
 `:q!` → quit without saving, also: `:qa!` to quit even if there are modified hidden buffers.
+
 `:bn` (resp. `:bp`) → show next (resp. previous) file (buffer)
 
 
@@ -89,3 +105,5 @@ Frente a otros editores de texto que deshacen los cambios carácter a carácter 
 Comprendo que todo esto que estamos viendo te resulte un poco apabullante. Son demasiados modos, demasiados comandos, verbos, objetos, etc. Es normal, todos los que flipamos con Vim hemos pasado por eso. No te preocupes, a medida que vayas usando Vim un poco más y que vayas pillando su filosofía empezarás a interiorizar todo esto. Y entonces trabajaras de Vim de forma natural, y procesarás archivos a una velocidad endiablada. 
 
 Mientras tanto respira, no te agobies, toma tu tiempo y dedica un rato a manejar y mejorar en Vim cada vez que tengas oportunidad. Si tienes que editar algún fichero, piensa, ¿podría hacerlo con Vim?
+
+[Sobrevivir al primer impacto](https://github.com/juananruiz/curso_vim/blob/master/temario/sobrevivir_al_primer_impacto.md) - [Volver al índice](https://github.com/juananruiz/curso_vim) - [Vuela como si no te afectara la gravedad >>](https://github.com/juananruiz/curso_vim/blob/master/temario/vuela_como_si_no_te_afectara_la_gravedad.md)
