@@ -106,4 +106,4 @@ Comprendo que todo esto que estamos viendo te resulte un poco apabullante. Son d
 
 Mientras tanto respira, no te agobies, toma tu tiempo y dedica un rato a manejar y mejorar en Vim cada vez que tengas oportunidad. Si tienes que editar algún fichero, piensa, ¿podría hacerlo con Vim?
 
-[Sobrevivir al primer impacto](https://github.com/juananruiz/curso_vim/blob/master/temario/sobrevivir_al_primer_impacto.md) - [Volver al índice](https://github.com/juananruiz/curso_vim) - [Vuela como si no te afectara la gravedad >>](https://github.com/juananruiz/curso_vim/blob/master/temario/vuela_como_si_no_te_afectara_la_gravedad.md)
+[<< Sobrevivir al primer impacto](https://github.com/juananruiz/curso_vim/blob/master/temario/sobrevivir_al_primer_impacto.md) - [Volver al índice](https://github.com/juananruiz/curso_vim) - [Vuela como si no te afectara la gravedad >>](https://github.com/juananruiz/curso_vim/blob/master/temario/vuela_como_si_no_te_afectara_la_gravedad.md)
