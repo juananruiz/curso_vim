@@ -62,4 +62,6 @@ Ahora te propongo que hagas el ejercicio que aparece en el fichero "copiando_fun
 
 Bien, utiliza estos comandos hasta sentirte cómodo con ellos, una vez que lo hayas hecho te sentirás prácticamente de nuevo como en casa, tomate tu tiempo. Podrás hacer con Vim lo que hasta ahora hacías con un editor normal, recuerda, tienes que adaptarte a tus nuevos superpoderes y el primer paso es poder hacer de nuevo tus acciones cotidianas. Puede que todavía te sientas un poco incomodo, pero sigue conmigo a la siguiente etapa de este alunizaje.
 
-![chuleta_manuscrita_fase2](chuletas/chuleta_manuscrita_fase2.jpeg)
+![Chuleta manuscrita fase 2](https://github.com/juananruiz/curso_vim/blob/master/chuletas/chuleta_manuscrita_fase2.jpeg)
+
+[<< Comenzar a respirar](https://github.com/juananruiz/curso_vim/blob/master/temario/comenzar_a_respirar.md) - [Volver al índice](https://github.com/juananruiz/curso_vim) - [Muevete a la velocidad de la luz >>](https://github.com/juananruiz/curso_vim/blob/master/temario/muevete_a_la_velocidad_de_la_luz.md)
