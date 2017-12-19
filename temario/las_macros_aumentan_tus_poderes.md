@@ -1,12 +1,16 @@
 # Las macros aumentan tus poderes 
 
-En la mayoría de los editores de texto es fácil editar y muchísimo más complicado hacer macros en Vim por fin es al revés. Y por qué es esto así pues porque cuenta de que es un lenguaje de visión y si conoces un lenguaje escribir un pequeño cuento es sencillo.
+En la mayoría de los editores de texto es fácil editar y muchísimo más complicado hacer macros, en Vim por fin, es al revés. Y esto así porque Vim es un lenguaje de edición y si conoces el lenguaje escribir un pequeño cuento es sencillo.
 
-Prácticamente no necesitas aprender nada nuevo para hacer macros en Vim solo tienes que aplicar lo que ya sabes y un par de trucos que te voy a contar.
+Prácticamente no necesitas aprender nada nuevo para hacer macros en Vim, solo tienes que aplicar lo que ya sabes y un par de trucos que te voy a contar.
 
-Las macros en Vim se declaran escribiendo `q` y otra letra cualquiera del alfabeto en minúscula, esto te da 24 macros que podrías mantener en memoria, incluso, si no las sobreescribes, estarán ahí la próxima vez que arranques vim. 
+Las macros en Vim se declaran escribiendo `q` y otra letra cualquiera en minúscula, esto te da 24 macros que podrías mantener en memoria, incluso, si no las sobreescribes, estarán ahí la próxima vez que arranques vim. 
 
 Ten en cuenta que las macros se graban en los mismos registros que el "portapapeles" de vim, por lo que si declaras una macro en el registro **a** y luego copias algo en ese registro te cargas la macro. Es cuestión de organizarte, tienes 24 registros.
+
+Te lo repito de nuevo, las macros se graban en registros, los fragmentos de texto que copias o cortas se graban en el registro. Para el registro no hay diferencias entre macros y fragmentos de texto, si copias un fragmento de texto al registro ""a"" y luego tecleas `@a` Vim intentará ejecutar como una macro ese fragmento de texto. Si, por el contrario, grabas una macro en el registro ""b"" y luego tecleas `"bp` Vim copiará los comandos de tu macro a la derecha de la posición actual del cursor.
+
+Y ahora te invito a crear una macro, y te pido que vayas siguiendo estos pasos conmigo.
 
 ### Un ejemplo de macro
 
@@ -16,17 +20,17 @@ Como ya te estás vim-acostumbrando me dirás que si tienes que subrayar diez t�
 
 Entonces haz lo siguiente, sitúate sobre la línea que vas a subrayar, da igual la posición. 
 
-1. Teclea `qs` para empezar a grabar la macro en el registro **s** (de subrayado)
+1. Teclea `qs` para empezar a grabar la macro en el registro **s** (s de subrayado para acordarte)
 
-2. Teclea la macro: `yypVr-`
+2. Teclea la secuencia de comandos que formarán la macro: `yypVr-`
 
 3. Pulsa `q`
 
 4. Tendrás tu título con un subrayado exacto.
 
-5. Ve al siguiente título que tengas que subrayar y teclea `@s` ¡chan chan!
+5. Ve al siguiente título que tengas que subrayar y teclea `@s` ¡chan ta ta chan!
 
-   ​
+   
 
 ### Editar una macro
 
