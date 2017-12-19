@@ -8,7 +8,7 @@ Las macros en Vim se declaran escribiendo `q` y otra letra cualquiera en minúsc
 
 Ten en cuenta que las macros se graban en los mismos registros que el "portapapeles" de vim, por lo que si declaras una macro en el registro **a** y luego copias algo en ese registro te cargas la macro. Es cuestión de organizarte, tienes 24 registros.
 
-Te lo repito de nuevo, las macros se graban en registros, los fragmentos de texto que copias o cortas también se graban en el registro. Para el registro no hay diferencias entre macros y fragmentos de texto, si copias un fragmento de texto al registro ""a"" y luego tecleas `@a` Vim intentará ejecutar como una macro ese fragmento de texto. Si, por el contrario, grabas una macro en el registro ""b"" y luego tecleas `"bp` Vim copiará los comandos de tu macro a la derecha de la posición actual del cursor.
+Te lo repito de nuevo, las macros se graban en registros, los fragmentos de texto que copias o cortas, también se graban en el registro. Para el registro no hay diferencias entre macros y fragmentos de texto, si copias un fragmento de texto al registro ""a"" y luego tecleas `@a` Vim intentará ejecutar como una macro ese fragmento de texto. Si, por el contrario, grabas una macro en el registro ""b"" y luego tecleas `"bp` Vim copiará los comandos de tu macro a la derecha de la posición actual del cursor.
 
 Y ahora te invito a crear una macro, y te pido que vayas siguiendo estos pasos conmigo.
 
