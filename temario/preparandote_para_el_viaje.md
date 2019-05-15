@@ -4,7 +4,7 @@ Vim es un editor de texto basado en modos: inserción de texto, modo normal (par
 
 Vim ofrece una experiencia de edición de texto altamente eficiente, veloz y libre de distracciones. Su principal ventaja es la misma que la de la mecanografía: su dominio te permite editar texto sin desviar tu atención hacia otros componentes de la interfaz del programa. A medida que vas memorizando los comandos la edición se convertirá en un acto reflejo y te permitirá concentrarte en el texto, de la misma forma que el escritor que conoce mecanografía no necesita perder tiempo en buscar las teclas en el teclado y se centra en el texto a escribir. Por otro lado, el principal inconveniente de Vim es la pronunciada curva de aprendizaje: si quieres sacar de él su máximo potencial, tendrás que hacer un esfuerzo inicial que luego verás recompensado con creces
 
-##Objetivo
+## Objetivo
 Este curso intenta ayudarte a descubrir Vim de una manera lúdica, sabiendo que supone un cierto reto pero evitando caer en el desaliento que puede suponer aprender algo totalmente nuevo (aunque estemos hablando de un editor que tiene 30 años). La recompensa merece la pena: aprenderás a manejar un editor que está disponible en cualquier sistema operativo y que por su tamaño y mínimos requisitos se puede instalar casi en cualquier dispositivo. A la vez que es capaz de tratar con ficheros de mayor tamaño que cualquiera del resto de editores más sofisticados, utilizando menos memoria y a través de cualquier tipo de interfaz por precaria que esta sea. Todo esto lo hace ideal para editar ficheros de configuración de cualquier tipo, programar en todos los lenguajes existentes, modificar textos de manera automatizada, etc.
 
 ## Instalar Vim 
