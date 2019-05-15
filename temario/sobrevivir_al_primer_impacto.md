@@ -22,7 +22,7 @@ Cuando te canses de practicar pulsa `ESC`, y entonces teclea: `:q`
  Este es el comando para salir de Vim sin guardar, si has hecho algún cambio se quejará de que no has guardado todo el trabajo que has hecho, como ahora no queremos guardar escribe entonces: `:q!`
 
 Para recordar el signo de admiración recuerda que puedes sustituirlo mentalmente por cualquier imprecación que necesites soltar. Yo suelo pensar:
-"¡Salte ya, repámpanos!"
+"¡Salte ya, repámpanos!” (Bueno, algo parecido)
 
 Si quieres guardar el fruto de tu esfuerzo teclea `:wq` para guardar y salir.
 
