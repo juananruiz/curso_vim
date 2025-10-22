@@ -24,3 +24,5 @@ existentes, modificar textos de manera automatizada, etc.
 11. [Recetas galácticas](temario/recetas_galacticas.md)
 
 También tienes disponibles los [ejercicios](https://github.com/juananruiz/curso_vim/tree/master/ejercicios) del curso
+
+octubre 2025: He retomado el uso de vim 5 años después y todavía me acuerdo de muchísimas cosas, esto es como montar en bicicleta, es para siempre, así que merece la pena aprenderlo. 
