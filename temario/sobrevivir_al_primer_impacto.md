@@ -8,7 +8,7 @@ Abre el editor, para ello invoca a vim desde la línea de comandos cargando el f
 
 Si lo has hecho bien aparecerá el contenido del fichero, si algo ha fallado puede que estés viendo algo parecido a esto, no pasa nada, es la pantalla de créditos de vim.
 
-![creditos_iniciales_vim](/Users/juananruiz/repos/curso-vim/img/creditos_iniciales_vim.png)
+![creditos_iniciales_vim](../img/creditos_iniciales_vim.png)
 
 Utiliza las teclas `h, j, k, l` para moverte a izquierda, abajo, arriba y derecha del texto (un truco para no perderte es que la j parece una flecha hacia abajo)
 
@@ -34,7 +34,7 @@ A lo largo del curso te iré dando algunas chuletas que te podrán ser de utilid
 
 Coge papel y boli y en un rinconcito apunta estos primeros comandos que has aprendido y para que sirven cada uno de ellos, puedes ver en la ilustración una idea de como podría ser esta chuleta, pero no tiene porqué ser exactamente así. Al final del curso tendrás la hoja entera rellena 
 
-![chuleta_manuscrita_fase1](chuletas/chuleta_manuscrita_fase1.jpeg)
+![chuleta_manuscrita_fase1](../chuletas/chuleta_manuscrita_fase1.jpeg)
 
 ## Resumen de comandos de esta etapa
 
